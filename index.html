@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FluxGB</title>
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Trunk に Wasm エントリポイントを任せる -->
+    <script data-trunk src="main.js"></script>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js");
+      }
+    </script>
+  </body>
+</html>
+

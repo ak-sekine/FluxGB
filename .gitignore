@@ -1,0 +1,21 @@
+# Rust / Cargo
+/target/
+/Cargo.lock
+
+# Trunk / WebAssembly / Yew
+/dist/
+/pkg/
+/wasm-pack.log
+
+# Node (もし npm/pnpm を使う場合)
+/node_modules/
+
+# Editor / OS
+*.swp
+*.swo
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log
