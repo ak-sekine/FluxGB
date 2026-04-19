@@ -1,7 +1,4 @@
-[package]
-name = "fluxgb"
-version = "0.1.0"
-edition = "2021"
+[workspace]
+members = ["core", "frontend"]
+resolver = "2"
 
-[dependencies]
-yew = { version = "0.21", features = ["csr"] }
