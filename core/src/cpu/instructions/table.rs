@@ -8,10 +8,10 @@ pub type OpFn = fn(&mut Cpu, &mut dyn Bus) -> u8;
 /// 256エントリの命令テーブル
 pub static OPCODE_TABLE: [OpFn; 256] = [
     // 0x00 - 0x0F
-    op_00, op_unimplemented, op_unimplemented, op_unimplemented,
-    op_unimplemented, op_unimplemented, op_unimplemented, op_unimplemented,
-    op_unimplemented, op_unimplemented, op_unimplemented, op_unimplemented,
-    op_unimplemented, op_unimplemented, op_unimplemented, op_unimplemented,
+    op_00, op_01, op_02, op_03,
+    op_04, op_05, op_06, op_07,
+    op_08, op_09, op_0a, op_0b,
+    op_0c, op_0d, op_0e, op_0f,
 
     // 0x10 - 0x1F
     op_unimplemented, op_unimplemented, op_unimplemented, op_unimplemented,
